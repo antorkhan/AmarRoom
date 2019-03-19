@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+        /*android:src="@drawable/background2"*/
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        /*android:background="@color/colorGrayTransparent"*/
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="17sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textStyle="bold"
+                    android:text="CREATE ACCOUNT"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="2"/>
+                
+                    <ImageView
+                        android:id="@+id/CloseSignupId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_close"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/nameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Full Name"
+                    android:drawableRight="@drawable/ic_person"
+                    android:background="@drawable/element_outline"/>
+                <EditText
+                    android:id="@+id/emailInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Phone"
+                    android:drawableRight="@drawable/ic_mail"
+                    android:background="@drawable/element_outline"/>
+                <EditText
+                    android:id="@+id/addressInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Address"
+                    android:drawableRight="@drawable/ic_home"
+                    android:background="@drawable/element_outline"/>
+                <EditText
+                    android:id="@+id/passwordInput"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Password"
+                    android:drawableRight="@drawable/ic_lock"
+                    android:background="@drawable/element_outline"/>
+                <EditText
+                    android:id="@+id/confirmPasswordInput"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Confirm Password"
+                    android:drawableRight="@drawable/ic_lock"
+                    android:background="@drawable/element_outline"/>
+
+                <Button
+                    android:onClick="validateJoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JOIN"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/button_black"/>
+            </LinearLayout>
+
+            /*Or Use Code Here*/
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
